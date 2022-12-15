@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="all.hpp" />
+    <ClInclude Include="ASIUtilities.hpp" />
+    <ClInclude Include="batch.hpp" />
+    <ClInclude Include="byte_patch.hpp" />
+    <ClInclude Include="Common.hpp" />
+    <ClInclude Include="Crossmap.hpp" />
+    <ClInclude Include="D3DRenderer.hpp" />
+    <ClInclude Include="data.hpp" />
+    <ClInclude Include="enums.hpp" />
+    <ClInclude Include="file.hpp" />
+    <ClInclude Include="file_manager.hpp" />
+    <ClInclude Include="folder.hpp" />
+    <ClInclude Include="fonts.hpp" />
+    <ClInclude Include="fwddec.h" />
+    <ClInclude Include="GTAScript.hpp" />
+    <ClInclude Include="gta_util.hpp" />
+    <ClInclude Include="handle.hpp" />
+    <ClInclude Include="Hooking.hpp" />
+    <ClInclude Include="httplib.hpp" />
+    <ClInclude Include="http_request.hpp" />
+    <ClInclude Include="Invoker.hpp" />
+    <ClInclude Include="local_features.hpp" />
+    <ClInclude Include="logger.hpp" />
+    <ClInclude Include="Loops.hpp" />
+    <ClInclude Include="menus.hpp" />
+    <ClInclude Include="net_event.hpp" />
+    <ClInclude Include="notifications.hpp" />
+    <ClInclude Include="ped_data.hpp" />
+    <ClInclude Include="PEImage.h" />
+    <ClInclude Include="player.hpp" />
+    <ClInclude Include="player_features.hpp" />
+    <ClInclude Include="player_getter.hpp" />
+    <ClInclude Include="Pools.hpp" />
+    <ClInclude Include="protections.hpp" />
+    <ClInclude Include="recovery_features.hpp" />
+    <ClInclude Include="remote.hpp" />
+    <ClInclude Include="ScriptHookV.hpp" />
+    <ClInclude Include="ASIManager.hpp" />
+    <ClInclude Include="toggles.hpp" />
+    <ClInclude Include="UIScript.hpp" />
+    <ClInclude Include="memory.hpp" />
+    <ClInclude Include="memory_decl.hpp" />
+    <ClInclude Include="module.hpp" />
+    <ClInclude Include="NativeHelper.hpp" />
+    <ClInclude Include="Natives.hpp" />
+    <ClInclude Include="pattern.hpp" />
+    <ClInclude Include="range.hpp" />
+    <ClInclude Include="script_globals.hpp" />
+    <ClInclude Include="Script.hpp" />
+    <ClInclude Include="fiber_pool.hpp" />
+    <ClInclude Include="ScriptManager.hpp" />
+    <ClInclude Include="Types.hpp" />
+    <ClInclude Include="UI\UIManager.hpp" />
+    <ClInclude Include="Util.hpp" />
+    <ClInclude Include="vector.hpp" />
+    <ClInclude Include="Vehices_Hash.h" />
+    <ClInclude Include="vehicle_data.hpp" />
+    <ClInclude Include="Vehicle_Mods.h" />
+    <ClInclude Include="VMTHook.hpp" />
+    <ClInclude Include="weapon_data.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ASIUtilities.cpp" />
+    <ClCompile Include="batch.cpp" />
+    <ClCompile Include="Common.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="D3DRenderer.cpp" />
+    <ClCompile Include="data.cpp" />
+    <ClCompile Include="DxDetours.cpp" />
+    <ClCompile Include="file.cpp" />
+    <ClCompile Include="folder.cpp" />
+    <ClCompile Include="font.cpp" />
+    <ClCompile Include="GTAScript.cpp" />
+    <ClCompile Include="Hooking.cpp" />
+    <ClCompile Include="icon.cpp" />
+    <ClCompile Include="increment_stat_event.cpp" />
+    <ClCompile Include="Invoker.cpp" />
+    <ClCompile Include="local.cpp" />
+    <ClCompile Include="logo.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="module.cpp" />
+    <ClCompile Include="NativeTable.cpp" />
+    <ClCompile Include="NetworkPlayerMgr.cpp" />
+    <ClCompile Include="net_obj_mgr.hpp" />
+    <ClCompile Include="pattern.cpp" />
+    <ClCompile Include="ped_data.cpp" />
+    <ClCompile Include="PEImage.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="playerList.cpp" />
+    <ClCompile Include="PlayerListMgr.cpp" />
+    <ClCompile Include="player_getter.cpp" />
+    <ClCompile Include="Pools.cpp" />
+    <ClCompile Include="range.cpp" />
+    <ClCompile Include="fiber_pool.cpp" />
+    <ClCompile Include="received_event.cpp" />
+    <ClCompile Include="recovery.cpp" />
+    <ClCompile Include="Script.cpp" />
+    <ClCompile Include="ASIManager.cpp" />
+    <ClCompile Include="scripted_game_event.cpp" />
+    <ClCompile Include="scripthook.cpp" />
+    <ClCompile Include="ScriptHookV.cpp" />
+    <ClCompile Include="ScriptManager.cpp" />
+    <ClCompile Include="toggles.cpp" />
+    <ClCompile Include="Transactions.cpp" />
+    <ClCompile Include="UIScript.cpp" />
+    <ClCompile Include="ScriptVM.cpp" />
+    <ClCompile Include="script_globals.cpp" />
+    <ClCompile Include="UI\UIManager.cpp" />
+    <ClCompile Include="vehicles.cpp" />
+    <ClCompile Include="vehicle_data.cpp" />
+    <ClCompile Include="weapon_data.cpp" />
+    <ClCompile Include="WndProc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vendor\fmtlib\fmtlib.vcxproj">
+      <Project>{2319c3fd-0fbb-edd3-f875-0128e4b67424}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vendor\g3log\g3log.vcxproj">
+      <Project>{81ad640f-edc1-8cc0-b643-3020221789f1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vendor\ImGui\ImGui.vcxproj">
+      <Project>{c0ff640d-2c14-8dbe-f595-301e616989ef}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vendor\MinHook\MinHook.vcxproj">
+      <Project>{1a77e127-8656-60c3-8f6e-eb99fbccc624}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="invoker_asm.asm">
+      <FileType>Document</FileType>
+    </MASM>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D52E5E73-B8A8-4992-8347-41ABE83D4991}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Chimera</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <ProjectName>Chimera</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Binaries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\$(Configuration)-Intermediates\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin\Release\</OutDir>
+    <IntDir>..\bin\int\Release\Chimera\</IntDir>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;Chimera_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PrecompiledHeaderFile>Common.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ForcedIncludeFiles>Common.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4307</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Binaries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x601;NDEBUG;RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <OmitFramePointers>false</OmitFramePointers>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <PrecompiledHeaderFile>Common.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ForcedIncludeFiles>Common.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>Chimera;..\vendor\fmtlib\include;..\vendor\g3log\src;..\vendor\GTAV-Classes;..\vendor\ImGui;..\vendor\json\single_include;..\vendor\MinHook\include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4307;26495;26451;4244;4005;4172</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;d3dcompiler.lib;d3dx11.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Common.hpp" />
+    <ClInclude Include="Hooking.hpp" />
+    <ClInclude Include="ScriptManager.hpp" />
+    <ClInclude Include="Natives.hpp" />
+    <ClInclude Include="Types.hpp" />
+    <ClInclude Include="Script.hpp" />
+    <ClInclude Include="Util.hpp" />
+    <ClInclude Include="fiber_pool.hpp" />
+    <ClInclude Include="all.hpp">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="batch.hpp">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="byte_patch.hpp">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory_decl.hpp">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="handle.hpp">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="module.hpp">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="pattern.hpp">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="range.hpp">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="logger.hpp">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="file.hpp">
+      <Filter>File Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="file_manager.hpp">
+      <Filter>File Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="folder.hpp">
+      <Filter>File Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Invoker.hpp">
+      <Filter>Invoking</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeHelper.hpp">
+      <Filter>Invoking</Filter>
+    </ClInclude>
+    <ClInclude Include="Crossmap.hpp">
+      <Filter>Invoking</Filter>
+    </ClInclude>
+    <ClInclude Include="script_globals.hpp">
+      <Filter>Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="VMTHook.hpp">
+      <Filter>VMT</Filter>
+    </ClInclude>
+    <ClInclude Include="memory.hpp">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="fonts.hpp">
+      <Filter>Fonts/Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="Loops.hpp">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="UIScript.hpp">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAScript.hpp">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="menus.hpp">
+      <Filter>Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="toggles.hpp">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="gta_util.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="enums.hpp" />
+    <ClInclude Include="data.hpp">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="vehicle_data.hpp">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ped_data.hpp">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="weapon_data.hpp">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="http_request.hpp">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="remote.hpp">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Vehices_Hash.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Vehicle_Mods.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DRenderer.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIManager.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="notifications.hpp">
+      <Filter>UI\Notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="httplib.hpp" />
+    <ClInclude Include="Pools.hpp">
+      <Filter>ScriptHookV</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptHookV.hpp">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="ASIManager.hpp">
+      <Filter>ScriptHookV</Filter>
+    </ClInclude>
+    <ClInclude Include="PEImage.h">
+      <Filter>ScriptHookV</Filter>
+    </ClInclude>
+    <ClInclude Include="ASIUtilities.hpp">
+      <Filter>ScriptHookV</Filter>
+    </ClInclude>
+    <ClInclude Include="protections.hpp">
+      <Filter>Protections</Filter>
+    </ClInclude>
+    <ClInclude Include="net_event.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="fwddec.h">
+      <Filter>Protections</Filter>
+    </ClInclude>
+    <ClInclude Include="recovery_features.hpp">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="local_features.hpp">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="player.hpp">
+      <Filter>Misc\Player Getter</Filter>
+    </ClInclude>
+    <ClInclude Include="player_getter.hpp">
+      <Filter>Misc\Player Getter</Filter>
+    </ClInclude>
+    <ClInclude Include="player_features.hpp">
+      <Filter>Features</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="Hooking.cpp" />
+    <ClCompile Include="ScriptManager.cpp" />
+    <ClCompile Include="fiber_pool.cpp" />
+    <ClCompile Include="batch.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="module.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="pattern.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="range.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="file.cpp">
+      <Filter>File Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="folder.cpp">
+      <Filter>File Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Invoker.cpp">
+      <Filter>Invoking</Filter>
+    </ClCompile>
+    <ClCompile Include="script_globals.cpp">
+      <Filter>Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="font.cpp">
+      <Filter>Fonts/Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="icon.cpp">
+      <Filter>Fonts/Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="DxDetours.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptVM.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="UIScript.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="GTAScript.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="logo.cpp">
+      <Filter>Fonts/Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="local.cpp">
+      <Filter>Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="toggles.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Script.cpp" />
+    <ClCompile Include="WndProc.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="vehicle_data.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="ped_data.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="weapon_data.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="data.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="vehicles.cpp">
+      <Filter>Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DRenderer.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIManager.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Pools.cpp">
+      <Filter>ScriptHookV</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptHookV.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="ASIManager.cpp">
+      <Filter>ScriptHookV</Filter>
+    </ClCompile>
+    <ClCompile Include="PEImage.cpp">
+      <Filter>ScriptHookV</Filter>
+    </ClCompile>
+    <ClCompile Include="scripthook.cpp">
+      <Filter>Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="ASIUtilities.cpp">
+      <Filter>ScriptHookV</Filter>
+    </ClCompile>
+    <ClCompile Include="received_event.cpp">
+      <Filter>Protections</Filter>
+    </ClCompile>
+    <ClCompile Include="increment_stat_event.cpp">
+      <Filter>Protections</Filter>
+    </ClCompile>
+    <ClCompile Include="scripted_game_event.cpp">
+      <Filter>Protections</Filter>
+    </ClCompile>
+    <ClCompile Include="net_obj_mgr.hpp">
+      <Filter>Protections</Filter>
+    </ClCompile>
+    <ClCompile Include="Transactions.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerListMgr.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Misc\Player Getter</Filter>
+    </ClCompile>
+    <ClCompile Include="player_getter.cpp">
+      <Filter>Misc\Player Getter</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkPlayerMgr.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="playerList.cpp">
+      <Filter>Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="recovery.cpp">
+      <Filter>Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="NativeTable.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{34b597ef-638b-4bd7-b46a-7a75a57404a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{8f5285bb-c5ba-4a22-8d1f-02a6bdef1ac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File Manager">
+      <UniqueIdentifier>{e3462bd4-fbc8-44b5-b7c2-faf2d029d53a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{bbf01a46-7757-43e2-890a-b21dea08a0c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Invoking">
+      <UniqueIdentifier>{80b707ea-9c9d-426b-ad39-9c835bfb9cb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Globals">
+      <UniqueIdentifier>{561024a9-a42f-457a-bd68-527889230e01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VMT">
+      <UniqueIdentifier>{72f7c54c-e7f9-47fe-ab71-b6180f0b0294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{46d4b56f-0de5-497b-81ce-e0789251064b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{5e93c3ee-b8f5-4974-b422-49b0cca12e67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features">
+      <UniqueIdentifier>{3cff4ec8-65c2-41ef-a0aa-78aa74883d06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fonts/Logo">
+      <UniqueIdentifier>{b80898a2-0d31-414f-bf6f-68ad471e69a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menus">
+      <UniqueIdentifier>{c0e04883-5f29-4f84-babd-301d0b982667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{8ca421e6-a8b9-4db9-a8bf-ac4a93611521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Data">
+      <UniqueIdentifier>{32f77b07-71d6-47ab-8dc7-df7feaceea35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{ea2b4b42-f7ed-4023-9dee-d39b7210e362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Notifications">
+      <UniqueIdentifier>{a5f515c4-eac8-4ad4-84ac-4edc89175fdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptHookV">
+      <UniqueIdentifier>{1605a5ac-6f90-4701-aaec-4827356d6497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protections">
+      <UniqueIdentifier>{46a713f6-d2ba-46b0-b59b-4787831a7b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\Player Getter">
+      <UniqueIdentifier>{deb66cfb-f998-461b-8944-bb2a9891705a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patcher">
+      <UniqueIdentifier>{b29397fe-d0fe-4398-8c7b-e8f44059d9f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="invoker_asm.asm">
+      <Filter>Invoking</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
